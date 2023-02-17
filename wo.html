@@ -2,38 +2,197 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"/>
-	<title>yyx于耀翔</title>
-	<style>
+	<title>主页二</title>
+	 <link rel="shortcut icon" href="images\logos.png" type="image/x-icon" />
+<style type="text/css">
+/**{border:1px solid black;}*/
+*{margin: 0px;
+padding:0px;}
+body{height:100vh;overflow:auto;background-color: rgb(247,247,247);}
+.baise{background-color: white;box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+.flex{display: flex;}
+.column{flex-direction: column;}
+.row{flex-direction: row;}
+.body_div_1{margin-bottom: 8px;text-align: center;font-size: 35px;/*font-family: '微软雅黑'*/}
+.body_div_2{flex:1;margin: 8px;}
 
+.body_div_2_left{width:200px;height:500px;}
+.body_div_2_right{flex:1;margin-left: 8px;}
+.body_div_3{display: flex;flex-direction: column;padding: 40px;align-items: center;text-align: center;font-size: 18px}
+    p{line-height: 40px;}
+@media (max-width: 600px){
+
+    .left{display: none;}
+    .right{margin-left: 2px;margin-right: 2px}
+   
+    
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+ /* border: 1px solid #555;*/
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/*太极区*/
+@keyframes x{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+#bagua{
+
+  width:400px;
+  height: 400px;
+  border-radius: 300px;
+  position: relative;
+  overflow: hidden;
+  animation: x 10s infinite linear;
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+}
+#bagua>div:first-child{
+
+  width:50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: black;
+
+}
+#bagua>div:nth-child(2){
+
+  width:50%;
+  height: 100%;
+  position: absolute;
+  right:  0;
+  background:white;
+}
+#bagua>div:nth-child(3){
+
+  position: absolute;
+  height:200px;
+  width: 200px;
+  left:50%;
+  margin-left: -100px;
+  border-radius: 50%;
+  background-color: black;
+
+
+}
+#bagua>div:nth-child(4){
+
+  position: absolute;
+  height:200px;
+  width: 200px;
+  left:50%;
+  bottom:0;
+  margin-left: -100px;
+  border-radius: 50%;
+  background-color: white;
+
+
+}
+
+#bagua>div:nth-child(5){
+  position: absolute;
+  height:50px;
+  width: 50px;
+  left:50%;
+  top:75px;
+  margin-left: -25px;
+  border-radius: 50%;
+  background-color: white;
+
+}
+#bagua>div:nth-child(6){
+  position: absolute;
+  height:50px;
+  width: 50px;
+  left:50%;
+  bottom:75px;
+  margin-left: -25px;
+  border-radius: 50%;
+  background-color: black;
+
+}
+#bagua-wrapper{
+width:400px;
+height:400px;
+  
+}
+
+/*太极区*/
 </style>
 </head>
-<body style="margin:0px">
-<div style="background-color: #f1f1f1;text-align: center;padding: 40px">
-	<img src="images/logos.png" width="80px" height="80px">
-</div>
-<article style="max-width: 760px;margin: 30px auto;padding:15px;color: rgb(36,41,46);font-size: 18px;line-height: 1.7">
-	<p>你好呀，我是于耀翔</p>
-	<p>今年十九周岁</p>
-	<p>来自辽宁</p>
-    <p>大连理工大学一年级本科生</p>
-	<p>爱好是计算机、数学、物理、化学、哲学、睡觉</p>
-	<p>喜欢尝试新鲜事物</p>
-	<p>喜欢读《庄子》</p>
-	<p>喜欢看电影</p>
-	<p>喜欢听音乐</p>
-	<p>比较擅长乒乓球、前端开发</p>
-    <p></p>
-</article>
-<!-- <footer style="background-color: #f1f1f1;text-align: center;margin-top: 60px;font-size: 12px;padding: 40px">
-	<div>
-		<p></p>
+<body class="flex column">
+	<div class="body_div_1">Yuyaoxiang</div>
+	<div class="body_div_2 flex row  " >
+		<div class="body_div_2_left left baise">
+			      <ul>
+              <li><a class="active" href="wo.html"><strong>Home</strong></a></li>
+              <li><a href="de.html"><strong>主页</strong></a></li>
+              <li><a href="yan.html"><strong>特效页</strong></a></li>
+              <li><a href="li.html"><strong>学习资料</strong></a></li>
+              <li><a href="zhi.html"><strong>好</strong></a></li>
+              <li><a href="you.html"><strong>关于我</strong></a></li>
+            </ul> 
+
+		</div>
+		<div class="body_div_2_right right flex column baise" style="align-items: center;justify-content: center">
+
+                   <!-- 太极区 -->
+                <div id="bagua-wrapper">
+                  <div id="bagua">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                  <!-- 太极区 -->
+      
+					
 	</div>
-	
-	
-</footer> -->
+</div>
+	<div class="body_div_3 baise">
+	<p>What is in a name? That which we call a rose by any other name would smell as sweet.</p>
+	</div>
 </body>
 </html>
